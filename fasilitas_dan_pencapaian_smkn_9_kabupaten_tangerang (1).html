@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas & Pencapaian Jurusan - SMK Negeri 9 Kabupaten Tangerang</title>
+    <!-- Tailwind CSS untuk Desain Modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="theme-color" content="#162B4D">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1e3a8a',
+                            900: '#162B4D',
+                            950: '#0f1d36',
+                        },
+                        skybrand: '#81C4EE',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar Lengket (Sticky) -->
+    <header class="bg-navy-900 text-white shadow-lg sticky top-0 z-50 border-b border-white/10">
+        <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <!-- Identitas & Logo Resmi SMKN 9 Kab. Tangerang -->
+            <a href="#beranda" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0 drop-shadow-md transition-transform duration-300 group-hover:scale-105">
+                    <svg viewBox="0 0 220 220" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <path id="navArc" d="M 38,98 A 74,74 0 0,1 182,98" />
+                        </defs>
+                        <!-- Bingkai Kelopak / Awan -->
+                        <path d="M110,10 C128,10 142,20 148,34 C166,30 184,42 186,62 C202,72 206,94 196,110 C206,126 202,148 186,158 C184,178 166,190 148,186 C142,200 128,210 110,210 C92,210 78,200 72,186 C54,190 36,178 34,158 C18,148 14,126 24,110 C14,94 18,72 34,62 C36,42 54,30 72,34 C78,20 92,10 110,10 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="5"/>
+                        <path d="M110,18 C126,18 138,27 144,39 C160,36 176,47 178,64 C192,73 196,93 187,110 C196,127 192,147 178,156 C176,173 160,184 144,181 C138,193 126,202 110,202 C94,202 82,193 76,181 C60,184 44,173 42,156 C28,147 24,127 33,110 C24,93 28,73 42,64 C44,47 60,36 76,39 C82,27 94,18 110,18 Z" fill="none" stroke="#162B4D" stroke-width="2.5"/>
+                        <!-- Teks Melengkung -->
+                        <text font-size="11.5" font-weight="800" fill="#162B4D" font-family="sans-serif" letter-spacing="0.4">
+                            <textPath href="#navArc" startOffset="50%" text-anchor="middle">SMK NEGERI 9 KAB.TANGERANG</textPath>
+                        </text>
+                        <!-- Roda Gigi Bawah -->
+                        <path d="M56,144 A60,60 0 0,0 164,144 L154,138 A48,48 0 0,1 66,138 Z" fill="#D58EB3"/>
+                        <g fill="#D58EB3">
+                            <rect x="106" y="166" width="8" height="10" rx="1"/>
+                            <rect x="85" y="162" width="8" height="10" rx="1" transform="rotate(20 89 167)"/>
+                            <rect x="127" y="162" width="8" height="10" rx="1" transform="rotate(-20 131 167)"/>
+                            <rect x="67" y="151" width="8" height="10" rx="1" transform="rotate(40 71 156)"/>
+                            <rect x="145" y="151" width="8" height="10" rx="1" transform="rotate(-40 149 156)"/>
+                        </g>
+                        <!-- Simbol Kesehatan (Cawan & Ular) -->
+                        <path d="M88,66 L132,66 C130,78 120,83 114,84 L114,122 L106,122 L106,84 C100,83 90,78 88,66 Z" fill="#162B4D"/>
+                        <path d="M110,55 C97,55 95,64 108,65 C121,66 121,73 108,73" fill="none" stroke="#162B4D" stroke-width="3.5" stroke-linecap="round"/>
+                        <circle cx="113" cy="55" r="2.2" fill="#162B4D"/>
+                        <!-- Pena -->
+                        <polygon points="105,122 115,122 118,132 110,143 102,132" fill="#162B4D"/>
+                        <circle cx="110" cy="133" r="2" fill="#81C4EE"/>
+                        <!-- Komputer Kiri & Kanan -->
+                        <line x1="78" y1="103" x2="142" y2="103" stroke="#162B4D" stroke-width="2.5"/>
+                        <rect x="52" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                        <rect x="55" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                        <polygon points="50,114 80,114 83,118 47,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                        <rect x="142" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                        <rect x="145" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                        <polygon points="140,114 170,114 173,118 137,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                        <!-- Buku Terbuka -->
+                        <path d="M74,136 Q92,132 110,139 Q128,132 146,136 L149,153 Q128,148 110,155 Q92,148 71,153 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="2.2" stroke-linejoin="round"/>
+                        <line x1="110" y1="139" x2="110" y2="155" stroke="#162B4D" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block font-extrabold text-base sm:text-lg leading-tight tracking-wide">SMK NEGERI 9</span>
+                    <span class="block text-[11px] sm:text-xs text-skybrand font-semibold tracking-wider uppercase">Kabupaten Tangerang</span>
+                </div>
+            </div>
+
+            <!-- Navigasi Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+                <a href="#beranda" class="hover:text-skybrand transition">Beranda</a>
+                <a href="#fasilitas" class="hover:text-skybrand transition">Fasilitas Siswa</a>
+                <a href="#pencapaian" class="hover:text-skybrand transition">Pencapaian Jurusan</a>
+                <a href="#kontak" class="hover:text-skybrand transition">Kontak</a>
+                <a href="https://wa.me/6281319682548?text=Halo%20CS%20PPDB%20SMKN%209%20Kab.%20Tangerang,%20saya%20ingin%20bertanya%20mengenai%20fasilitas%20dan%20pendaftaran." target="_blank" rel="noopener noreferrer" class="bg-yellow-500 hover:bg-yellow-400 text-navy-950 font-bold px-4 py-2 rounded-xl shadow transition">
+                    Info PPDB
+                </a>
+            </nav>
+
+            <!-- Tombol Menu Mobile -->
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Buka Menu" class="md:hidden p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Dropdown Menu Mobile -->
+        <div id="mobileMenu" class="hidden md:hidden bg-navy-950 px-6 py-4 space-y-3 border-t border-white/10">
+            <a href="#beranda" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium hover:text-skybrand">Beranda</a>
+            <a href="#fasilitas" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium hover:text-skybrand">Fasilitas Siswa</a>
+            <a href="#pencapaian" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium hover:text-skybrand">Pencapaian Jurusan</a>
+            <a href="#kontak" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium hover:text-skybrand">Kontak & CS</a>
+            <a href="https://wa.me/6281319682548" target="_blank" rel="noopener noreferrer" class="block text-center bg-yellow-500 text-navy-950 font-bold py-2.5 rounded-xl">
+                Hubungi CS PPDB
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative bg-gradient-to-br from-navy-900 via-navy-800 to-blue-900 text-white py-16 sm:py-24 px-4 overflow-hidden">
+        <!-- Dekorasi Latar Belakang -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-skybrand blur-3xl"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-yellow-400 blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto max-w-5xl relative z-10 flex flex-col lg:flex-row items-center gap-10">
+            <!-- Teks Utama Hero -->
+            <div class="flex-1 text-center lg:text-left">
+                <span class="inline-flex items-center gap-2 bg-white/10 text-skybrand text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-skybrand/30 mb-4">
+                    <i class="fa-solid fa-award text-yellow-400"></i> Sekolah Vokasi Unggulan & Berprestasi
+                </span>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
+                    Fasilitas Modern & Rekam Jejak Prestasi <span class="text-yellow-400">SMKN 9 Kab. Tangerang</span>
+                </h1>
+                <p class="text-blue-100 text-base sm:text-lg mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Kami menyiapkan lingkungan belajar berstandar industri bagi setiap peserta didik baru untuk mengasah kompetensi di 6 jurusan unggulan hingga meraih prestasi tingkat kabupaten, provinsi, maupun nasional.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#fasilitas" class="bg-yellow-500 hover:bg-yellow-400 text-navy-950 font-bold px-6 py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-building-columns"></i> Jelajahi Fasilitas Siswa
+                    </a>
+                    <a href="#pencapaian" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-trophy text-yellow-400"></i> Lihat Prestasi Jurusan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kartu Ringkasan Statistik & Logo -->
+            <div class="w-full max-w-sm bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl">
+                <div class="flex flex-col items-center text-center mb-6">
+                    <div class="w-24 h-24 mb-3 bg-white/10 p-2 rounded-full border border-skybrand/40">
+                        <svg viewBox="0 0 220 220" class="w-full h-full drop-shadow" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <path id="heroArc" d="M 38,98 A 74,74 0 0,1 182,98" />
+                            </defs>
+                            <path d="M110,10 C128,10 142,20 148,34 C166,30 184,42 186,62 C202,72 206,94 196,110 C206,126 202,148 186,158 C184,178 166,190 148,186 C142,200 128,210 110,210 C92,210 78,200 72,186 C54,190 36,178 34,158 C18,148 14,126 24,110 C14,94 18,72 34,62 C36,42 54,30 72,34 C78,20 92,10 110,10 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="5"/>
+                            <path d="M110,18 C126,18 138,27 144,39 C160,36 176,47 178,64 C192,73 196,93 187,110 C196,127 192,147 178,156 C176,173 160,184 144,181 C138,193 126,202 110,202 C94,202 82,193 76,181 C60,184 44,173 42,156 C28,147 24,127 33,110 C24,93 28,73 42,64 C44,47 60,36 76,39 C82,27 94,18 110,18 Z" fill="none" stroke="#162B4D" stroke-width="2.5"/>
+                            <text font-size="11.5" font-weight="800" fill="#162B4D" font-family="sans-serif" letter-spacing="0.4">
+                                <textPath href="#heroArc" startOffset="50%" text-anchor="middle">SMK NEGERI 9 KAB.TANGERANG</textPath>
+                            </text>
+                            <path d="M56,144 A60,60 0 0,0 164,144 L154,138 A48,48 0 0,1 66,138 Z" fill="#D58EB3"/>
+                            <g fill="#D58EB3">
+                                <rect x="106" y="166" width="8" height="10" rx="1"/>
+                                <rect x="85" y="162" width="8" height="10" rx="1" transform="rotate(20 89 167)"/>
+                                <rect x="127" y="162" width="8" height="10" rx="1" transform="rotate(-20 131 167)"/>
+                                <rect x="67" y="151" width="8" height="10" rx="1" transform="rotate(40 71 156)"/>
+                                <rect x="145" y="151" width="8" height="10" rx="1" transform="rotate(-40 149 156)"/>
+                            </g>
+                            <path d="M88,66 L132,66 C130,78 120,83 114,84 L114,122 L106,122 L106,84 C100,83 90,78 88,66 Z" fill="#162B4D"/>
+                            <path d="M110,55 C97,55 95,64 108,65 C121,66 121,73 108,73" fill="none" stroke="#162B4D" stroke-width="3.5" stroke-linecap="round"/>
+                            <circle cx="113" cy="55" r="2.2" fill="#162B4D"/>
+                            <polygon points="105,122 115,122 118,132 110,143 102,132" fill="#162B4D"/>
+                            <circle cx="110" cy="133" r="2" fill="#81C4EE"/>
+                            <line x1="78" y1="103" x2="142" y2="103" stroke="#162B4D" stroke-width="2.5"/>
+                            <rect x="52" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                            <rect x="55" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                            <polygon points="50,114 80,114 83,118 47,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                            <rect x="142" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                            <rect x="145" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                            <polygon points="140,114 170,114 173,118 137,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                            <path d="M74,136 Q92,132 110,139 Q128,132 146,136 L149,153 Q128,148 110,155 Q92,148 71,153 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="2.2" stroke-linejoin="round"/>
+                            <line x1="110" y1="139" x2="110" y2="155" stroke="#162B4D" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-bold text-lg text-white">Siap Kerja, Cerdas & Kompetitif</h2>
+                    <p class="text-xs text-skybrand">Kurikulum Merdeka Berbasis Industri</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 text-center">
+                    <div class="bg-navy-950/60 p-3 rounded-2xl border border-white/10">
+                        <span class="block text-2xl font-extrabold text-yellow-400">6</span>
+                        <span class="text-xs text-blue-100">Kompetensi Keahlian</span>
+                    </div>
+                    <div class="bg-navy-950/60 p-3 rounded-2xl border border-white/10">
+                        <span class="block text-2xl font-extrabold text-skybrand">12+</span>
+                        <span class="text-xs text-blue-100">Lab & Bengkel Praktik</span>
+                    </div>
+                    <div class="bg-navy-950/60 p-3 rounded-2xl border border-white/10">
+                        <span class="block text-2xl font-extrabold text-emerald-400">50+</span>
+                        <span class="text-xs text-blue-100">Mitra Dunia Industri</span>
+                    </div>
+                    <div class="bg-navy-950/60 p-3 rounded-2xl border border-white/10">
+                        <span class="block text-2xl font-extrabold text-pink-400">100%</span>
+                        <span class="text-xs text-blue-100">Sertifikasi BNSP / LSP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian 1: Fasilitas Bagi Peserta Didik Baru -->
+    <section id="fasilitas" class="py-16 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-navy-800 bg-skybrand/30 px-3 py-1 rounded-full">Sarana & Prasarana Unggulan</span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-navy-900 mt-3">Fasilitas Bagi Peserta Didik Baru</h2>
+            <p class="text-slate-600 mt-3 text-sm sm:text-base">
+                Setiap siswa baru SMKN 9 Kabupaten Tangerang mendapatkan akses penuh terhadap fasilitas praktik modern, ruang belajar nyaman, serta dukungan penunjang pendidikan.
+            </p>
+        </div>
+
+        <!-- Filter Kategori Fasilitas Interaktif -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="facilityFilters">
+            <button onclick="filterFacilities('all', this)" class="filter-btn active bg-navy-900 text-white font-semibold px-5 py-2.5 rounded-xl text-sm shadow transition">
+                Semua Fasilitas
+            </button>
+            <button onclick="filterFacilities('lab', this)" class="filter-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 font-semibold px-5 py-2.5 rounded-xl text-sm transition">
+                Laboratorium & Bengkel
+            </button>
+            <button onclick="filterFacilities('penunjang', this)" class="filter-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 font-semibold px-5 py-2.5 rounded-xl text-sm transition">
+                Penunjang Belajar & Siswa Baru
+            </button>
+            <button onclick="filterFacilities('umum', this)" class="filter-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 font-semibold px-5 py-2.5 rounded-xl text-sm transition">
+                Sarana Umum & Ibadah
+            </button>
+        </div>
+
+        <!-- Grid Kartu Fasilitas -->
+        <div id="facilityGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Kartu 1: Lab TKJ -->
+            <div data-category="lab" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Lab & Bengkel</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Lab Komputer & Jaringan Fiber Optic</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Dilengkapi perangkat PC spesifikasi tinggi, RouterBOARD Mikrotik, Cisco Switch, serta alat splicing fiber optic untuk praktik jaringan skala enterprise.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Full AC & Koneksi High-Speed
+                </div>
+            </div>
+
+            <!-- Kartu 2: Bengkel TSM -->
+            <div data-category="lab" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-red-600">Lab & Bengkel</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Bengkel Praktik Otomotif Standar Industri</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Workshop luas dengan bike lift hidrolik, unit sepeda motor injeksi terbaru, diagnostic scanner tools, dan peralatan standar bengkel resmi.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Standar Keselamatan K3 Lengkap
+                </div>
+            </div>
+
+            <!-- Kartu 3: Lab Farmasi -->
+            <div data-category="lab" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600">Lab & Bengkel</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Lab Resep & Simulasi Apotek</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Laboratorium steril untuk praktik peracikan sediaan obat (puyer, kapsul, salep), timbangan analitik, dan ruang simulasi pelayanan kefarmasian apotek.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Peralatan Farmakope Terstandar
+                </div>
+            </div>
+
+            <!-- Kartu 4: Studio DKV -->
+            <div data-category="lab" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600">Lab & Bengkel</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Studio Multimedia, Fotografi & Desain</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Dilengkapi komputer grafis layar kalibrasi warna, pen tablet, kamera DSLR/Mirrorless, lighting studio profesional, dan green screen produksi video.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Software Desain & Editing Berlisensi
+                </div>
+            </div>
+
+            <!-- Kartu 5: Bank Mini & Lab Perkantoran -->
+            <div data-category="lab" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600">Lab & Bengkel</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Bank Mini Sekolah & Ruang Simulasi Kantor</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Fasilitas praktik teller perbankan, mesin hitung uang, aplikasi MYOB/Accurate untuk AKC, serta ruang resepsionis dan arsip digital untuk MPLB.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Teaching Factory Bisnis & Keuangan
+                </div>
+            </div>
+
+            <!-- Kartu 6: Paket Penunjang Siswa Baru -->
+            <div data-category="penunjang" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-sky-700">Penunjang Siswa Baru</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Seragam Praktik (Wearpack) & Jas Lab</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Peserta didik baru difasilitasi pengadaan atribut sekolah, pakaian praktik jurusan (wearpack bengkel/jas laboratorium farmasi), dan kartu pelajar digital.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Disesuaikan Identitas Jurusan
+                </div>
+            </div>
+
+            <!-- Kartu 7: Perpustakaan Digital & Wi-Fi -->
+            <div data-category="penunjang" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-indigo-600">Penunjang Belajar</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Perpustakaan Digital & Free Wi-Fi Area</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Akses ribuan koleksi e-book modul kejuruan, ruang baca nyaman ber-AC, proyektor interaktif di kelas, serta jaringan Wi-Fi gratis di seluruh area sekolah.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Mendukung Pembelajaran Digital
+                </div>
+            </div>
+
+            <!-- Kartu 8: Sarana Olahraga, Masjid & UKS -->
+            <div data-category="umum" class="facility-card bg-white rounded-2xl p-6 shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-mosque"></i>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-teal-600">Sarana Umum</span>
+                    <h3 class="font-bold text-lg text-navy-900 mt-1 mb-2">Masjid Sekolah, Lapangan Olahraga & UKS</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Masjid megah untuk pembinaan karakter religius, lapangan olahraga multifungsi (futsal, basket, voli), kantin sehat higienis, serta ruang UKS lengkap.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 flex items-center text-xs font-semibold text-navy-800">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Lingkungan Aman, Asri & Nyaman
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian 2: Pencapaian Masing-Masing Jurusan (6 Kompetensi Keahlian) -->
+    <section id="pencapaian" class="bg-navy-900 text-white py-16 sm:py-20 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-navy-950 bg-yellow-400 px-3 py-1 rounded-full">Rekam Jejak Keunggulan</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold mt-3">Pencapaian Masing-Masing Jurusan</h2>
+                <p class="text-blue-200 mt-3 text-sm sm:text-base">
+                    Pilih salah satu kompetensi keahlian di bawah ini untuk melihat daftar prestasi LKS, sertifikasi industri, serta serapan alumni di dunia kerja.
+                </p>
+            </div>
+
+            <!-- Tab Navigasi 6 Jurusan -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3 mb-8" id="majorTabs">
+                <button onclick="selectMajor('tkj', this)" class="major-tab active bg-yellow-500 text-navy-950 font-extrabold py-3 px-3 rounded-xl text-sm shadow-lg transition flex flex-col items-center justify-center gap-1">
+                    <i class="fa-solid fa-network-wired text-base"></i>
+                    <span>TKJ</span>
+                </button>
+                <button onclick="selectMajor('tsm', this)" class="major-tab bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-3 rounded-xl text-sm border border-white/10 transition flex flex-col items-center justify-center gap-1">
+                    <i class="fa-solid fa-wrench text-base"></i>
+                    <span>TSM</span>
+                </button>
+                <button onclick="selectMajor('farmasi', this)" class="major-tab bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-3 rounded-xl text-sm border border-white/10 transition flex flex-col items-center justify-center gap-1">
+                    <i class="fa-solid fa-pills text-base"></i>
+                    <span>FARMASI</span>
+                </button>
+                <button onclick="selectMajor('akc', this)" class="major-tab bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-3 rounded-xl text-sm border border-white/10 transition flex flex-col items-center justify-center gap-1">
+                    <i class="fa-solid fa-calculator text-base"></i>
+                    <span>AKC</span>
+                </button>
+                <button onclick="selectMajor('mplb', this)" class="major-tab bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-3 rounded-xl text-sm border border-white/10 transition flex flex-col items-center justify-center gap-1">
+                    <i class="fa-solid fa-briefcase text-base"></i>
+                    <span>MPLB</span>
+                </button>
+                <button onclick="selectMajor('dkv', this)" class="major-tab bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-3 rounded-xl text-sm border border-white/10 transition flex flex-col items-center justify-center gap-1">
+                    <i class="fa-solid fa-palette text-base"></i>
+                    <span>DKV</span>
+                </button>
+            </div>
+
+            <!-- Panel Konten Detail Pencapaian Jurusan -->
+            <div id="majorDetailContainer" class="bg-white text-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl border border-white/20 transition-all duration-300">
+                <!-- Konten akan dirender secara dinamis melalui JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian 3: Layanan Informasi & Kontak Customer Service -->
+    <section id="kontak" class="py-16 px-4 sm:px-6 max-w-5xl mx-auto">
+        <div class="bg-gradient-to-r from-emerald-50 to-sky-50 border border-emerald-200 rounded-3xl p-6 sm:p-10 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <span class="inline-block text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-200/70 px-3 py-1 rounded-full">
+                    Layanan Informasi & Bantuan PPDB
+                </span>
+                <h3 class="text-2xl font-extrabold text-navy-900 mt-3">Ingin Konsultasi Jurusan atau Fasilitas Sekolah?</h3>
+                <p class="text-slate-600 text-sm sm:text-base mt-1.5 max-w-xl">
+                    Tim Customer Service SMK Negeri 9 Kabupaten Tangerang siap membantu menjawab pertanyaan seputar pendaftaran siswa baru, jadwal verifikasi berkas, maupun informasi jurusan.
+                </p>
+                <div class="mt-4 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 text-sm font-bold">
+                    <span class="text-emerald-700 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> CS PPDB: 0813-1968-2548
+                    </span>
+                    <span class="hidden sm:inline text-slate-300">|</span>
+                    <a href="https://instagram.com/m.sayhrudin" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:underline flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-lg"></i> @m.sayhrudin
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row md:flex-col gap-3 w-full sm:w-auto flex-shrink-0">
+                <a href="https://wa.me/6281319682548?text=Halo%20Customer%20Service%20PPDB%20SMK%20Negeri%209%20Kabupaten%20Tangerang,%20saya%20ingin%20bertanya%20mengenai%20fasilitas%20dan%20pendaftaran%20siswa%20baru." target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Chat WhatsApp CS</span>
+                </a>
+                <a href="https://instagram.com/m.sayhrudin" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl shadow-md transition flex items-center justify-center gap-2 whitespace-nowrap">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                    <span>Instagram @m.sayhrudin</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tombol Mengambang (Floating WhatsApp CS) -->
+    <a href="https://wa.me/6281319682548?text=Halo%20Customer%20Service%20PPDB%20SMKN%209%20Kab.%20Tangerang,%20saya%20butuh%20bantuan%20informasi." target="_blank" rel="noopener noreferrer" aria-label="Chat Customer Service WhatsApp" class="fixed bottom-5 right-5 z-50 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-3 rounded-full shadow-2xl flex items-center gap-2.5 transition transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <div class="text-left leading-tight">
+            <span class="block text-[10px] uppercase tracking-wider text-emerald-100 font-semibold">Customer Service</span>
+            <span class="block text-sm font-bold">0813-1968-2548</span>
+        </div>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-blue-200 py-10 text-center text-sm px-4 border-t border-white/10">
+        <div class="max-w-4xl mx-auto space-y-2">
+            <p class="font-bold text-white text-base">SMK Negeri 9 Kabupaten Tangerang</p>
+            <p class="text-xs text-blue-300">Mencetak Generasi Kompeten, Unggul, Berkarakter & Siap Bersaing di Dunia Industri</p>
+            <div class="pt-2 flex flex-wrap justify-center items-center gap-3 text-xs sm:text-sm">
+                <span>Customer Service PPDB: <a href="https://wa.me/6281319682548" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-semibold hover:underline">0813-1968-2548</a></span>
+                <span class="text-blue-600">•</span>
+                <span>Instagram: <a href="https://instagram.com/m.sayhrudin" target="_blank" rel="noopener noreferrer" class="text-pink-400 font-semibold hover:underline">@m.sayhrudin</a></span>
+            </div>
+            <p class="pt-4 text-xs text-blue-400">&copy; 2026 SMK Negeri 9 Kabupaten Tangerang. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Script Interaktif Filter Fasilitas & Tab Pencapaian Jurusan -->
+    <script>
+        // Toggle Menu Mobile
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Filter Kategori Fasilitas
+        function filterFacilities(category, btnElement) {
+            // Update tampilan tombol aktif
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-navy-900', 'text-white', 'shadow');
+                btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+            });
+            btnElement.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+            btnElement.classList.add('bg-navy-900', 'text-white', 'shadow');
+
+            // Tampilkan / Sembunyikan kartu fasilitas
+            const cards = document.querySelectorAll('.facility-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Data Pencapaian 6 Jurusan SMKN 9 Kabupaten Tangerang
+        const majorsData = {
+            tkj: {
+                code: 'TKJ',
+                name: 'Teknik Komputer & Jaringan',
+                badgeColor: 'bg-blue-100 text-blue-800',
+                accentColor: 'text-blue-700',
+                tagline: 'Mencetak Network Engineer, System Administrator & Teknisi Fiber Optic Profesional',
+                stats: [
+                    { label: 'Serapan Kerja & Kuliah', value: '94%' },
+                    { label: 'Sertifikasi Industri', value: 'MTCNA & BNSP' },
+                    { label: 'Mitra ISP & IT', value: '15+ Perusahaan' }
+                ],
+                achievements: [
+                    'Juara Lomba Kompetensi Siswa (LKS) Bidang IT Network Systems Administration Tingkat Kabupaten Tangerang.',
+                    'Lulusan tersertifikasi kompetensi nasional BNSP Klaster Instalasi Jaringan Komputer & Mikrotik (MTCNA).',
+                    'Berhasil membangun infrastruktur jaringan Wi-Fi mandiri dan server lokal berbasis Linux di lingkungan sekolah.',
+                    'Alumni bekerja sebagai Network Technician di berbagai perusahaan ISP, manufaktur kawasan Tangerang, dan melanjutkan ke perguruan tinggi negeri.'
+                ],
+                project: 'Proyek Unggulan Siswa: Instalasi Jaringan FTTH (Fiber To The Home) & Konfigurasi Cloud Server Sekolah.'
+            },
+            tsm: {
+                code: 'TSM',
+                name: 'Teknik Sepeda Motor',
+                badgeColor: 'bg-red-100 text-red-800',
+                accentColor: 'text-red-700',
+                tagline: 'Mencetak Mekanik Handal Berstandar Bengkel Resmi & Wirausaha Otomotif',
+                stats: [
+                    { label: 'Serapan Kerja Bengkel Resmi', value: '95%' },
+                    { label: 'Sertifikasi Industri', value: 'Teknisi Level 1-2' },
+                    { label: 'Mitra Bengkel & Dealer', value: '12+ Dealer Resmi' }
+                ],
+                achievements: [
+                    'Meraih prestasi pada ajang LKS Bidang Motorcycle Repair & Maintenance tingkat Kabupaten Tangerang.',
+                    'Operasional Unit Produksi Bengkel Teaching Factory (TeFa) yang melayani servis berkala sepeda motor masyarakat umum.',
+                    'Pelatihan rutin teknologi sistem bahan bakar injeksi (PGM-FI) dan kendaraan listrik bersama instruktur industri.',
+                    'Banyak alumni langsung direkrut sebagai mekanik di jaringan bengkel resmi (AHASS/Dealer) maupun membuka bengkel mandiri.'
+                ],
+                project: 'Proyek Unggulan Siswa: Layanan Servis Berkala Injeksi & Tune-Up Standar Dealer di Bengkel Sekolah.'
+            },
+            farmasi: {
+                code: 'FARMASI',
+                name: 'Farmasi Klinis & Komunitas',
+                badgeColor: 'bg-emerald-100 text-emerald-800',
+                accentColor: 'text-emerald-700',
+                tagline: 'Mencetak Tenaga Teknis Kefarmasian yang Teliti, Humanis & Profesional',
+                stats: [
+                    { label: 'Serapan Apotek & RS', value: '96%' },
+                    { label: 'Sertifikasi Kompetensi', value: 'LSP Asnakes / BNSP' },
+                    { label: 'Mitra Apotek & Klinik', value: '20+ Fasilitas Kesehatan' }
+                ],
+                achievements: [
+                    'Juara Lomba Kompetensi Siswa (LKS) Bidang Health & Social Care / Farmasi tingkat Kabupaten Tangerang.',
+                    'Tingkat kelulusan 100% pada Uji Kompetensi Keahlian (UKK) Tenaga Teknis Kefarmasian berlisensi BNSP.',
+                    'Inovasi produk herbal dan sediaan farmasi siswa (hand sanitizer herbal, balsam aromaterapi, dan jamu instan modern).',
+                    'Alumni tersebar bekerja sebagai asisten apoteker di jaringan apotek nasional (Kimia Farma, K-24), klinik, rumah sakit, dan melanjutkan kuliah S1 Farmasi.'
+                ],
+                project: 'Proyek Unggulan Siswa: Simulasi Pelayanan Resep Apotek & Formulasi Produk Herbal Kesehatan.'
+            },
+            akc: {
+                code: 'AKC',
+                name: 'Akuntansi & Keuangan',
+                badgeColor: 'bg-amber-100 text-amber-800',
+                accentColor: 'text-amber-700',
+                tagline: 'Mencetak Staf Akuntansi, Perpajakan & Teknisi Keuangan Digital yang Akurat',
+                stats: [
+                    { label: 'Serapan Kerja & Kuliah', value: '92%' },
+                    { label: 'Sertifikasi Kompetensi', value: 'Teknisi Akuntansi Yunior' },
+                    { label: 'Software Unggulan', value: 'MYOB & Accurate' }
+                ],
+                achievements: [
+                    'Meraih prestasi dalam Olimpiade Akuntansi & LKS Bidang Accounting tingkat Kabupaten Tangerang.',
+                    'Sertifikasi kompetensi Teknisi Akuntansi Yunior dari LSP-P1 / BNSP untuk seluruh lulusan.',
+                    'Pengelolaan Bank Mini Sekolah secara profesional yang melatih siswa melayani transaksi tabungan siswa dan guru.',
+                    'Alumni banyak menempati posisi staf administrasi keuangan, kasir perbankan, dan staf akunting di perusahaan kawasan industri Tangerang.'
+                ],
+                project: 'Proyek Unggulan Siswa: Penyusunan Laporan Keuangan Perusahaan Dagang/Manufaktur Berbasis Komputer.'
+            },
+            mplb: {
+                code: 'MPLB',
+                name: 'Manajemen Perkantoran & Layanan Bisnis',
+                badgeColor: 'bg-indigo-100 text-indigo-800',
+                accentColor: 'text-indigo-700',
+                tagline: 'Mencetak Sekretaris Modern, Staf Administrasi & Customer Relations Profesional',
+                stats: [
+                    { label: 'Serapan Kerja Perkantoran', value: '93%' },
+                    { label: 'Sertifikasi Kompetensi', value: 'Administrasi Perkantoran' },
+                    { label: 'Mitra Instansi & Perusahaan', value: '15+ Instansi' }
+                ],
+                achievements: [
+                    'Berprestasi dalam LKS Bidang Bilingual Secretary & Administrasi Perkantoran tingkat Kabupaten Tangerang.',
+                    'Menguasai tata kelola kearsipan digital (e-Archiving), korespondensi bisnis modern, dan aplikasi perkantoran terpadu.',
+                    'Menjadi tim protokoler dan layanan informasi utama pada berbagai kegiatan resmi sekolah dan instansi daerah.',
+                    'Alumni diterima bekerja sebagai staf administrasi HRD, sekretaris eksekutif, dan staf pelayanan publik di instansi pemerintah maupun swasta.'
+                ],
+                project: 'Proyek Unggulan Siswa: Manajemen Kearsipan Digital & Simulasi Pelayanan Prima (Service Excellence).'
+            },
+            dkv: {
+                code: 'DKV',
+                name: 'Desain Komunikasi Visual',
+                badgeColor: 'bg-purple-100 text-purple-800',
+                accentColor: 'text-purple-700',
+                tagline: 'Mencetak Desainer Grafis, Fotografer, Videografer & Kreator Konten Kreatif',
+                stats: [
+                    { label: 'Portofolio Siap Industri', value: '100%' },
+                    { label: 'Sertifikasi Kompetensi', value: 'Desainer Grafis Muda' },
+                    { label: 'Unit Produksi Kreatif', value: 'Studio Desain & Foto' }
+                ],
+                achievements: [
+                    'Juara Lomba Kompetensi Siswa (LKS) Bidang Graphic Design Technology tingkat Kabupaten Tangerang.',
+                    'Berhasil memproduksi berbagai karya desain branding UMKM, video profil sekolah, fotografi produk, dan konten media sosial profesional.',
+                    'Sertifikasi kompetensi Desainer Grafis Muda dari BNSP sebagai bekal melamar kerja di agensi kreatif.',
+                    'Alumni berkarier sebagai Graphic Designer, Video Editor, Content Creator, hingga membuka jasa studio kreatif dan percetakan mandiri.'
+                ],
+                project: 'Proyek Unggulan Siswa: Produksi Video Sinematik, Fotografi Komersial & Re-Branding Kemasan UMKM.'
+            }
+        };
+
+        // Render Detail Pencapaian Jurusan
+        function selectMajor(majorKey, tabElement) {
+            // Update styling tab aktif
+            if (tabElement) {
+                const tabs = document.querySelectorAll('.major-tab');
+                tabs.forEach(tab => {
+                    tab.classList.remove('bg-yellow-500', 'text-navy-950', 'font-extrabold', 'shadow-lg');
+                    tab.classList.add('bg-white/10', 'text-white', 'font-bold', 'border', 'border-white/10');
+                });
+                tabElement.classList.remove('bg-white/10', 'text-white', 'font-bold', 'border', 'border-white/10');
+                tabElement.classList.add('bg-yellow-500', 'text-navy-950', 'font-extrabold', 'shadow-lg');
+            }
+
+            const data = majorsData[majorKey];
+            const container = document.getElementById('majorDetailContainer');
+
+            const statsHtml = data.stats.map(stat => `
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center">
+                    <span class="block text-xl sm:text-2xl font-extrabold text-navy-900">${stat.value}</span>
+                    <span class="text-xs text-slate-500 font-medium">${stat.label}</span>
+                </div>
+            `).join('');
+
+            const achievementsHtml = data.achievements.map(item => `
+                <li class="flex items-start gap-3">
+                    <span class="w-6 h-6 rounded-full bg-yellow-100 text-yellow-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-trophy text-xs"></i>
+                    </span>
+                    <span class="text-slate-700 text-sm sm:text-base leading-relaxed">${item}</span>
+                </li>
+            `).join('');
+
+            container.innerHTML = `
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 pb-6 border-b border-slate-200">
+                    <div>
+                        <div class="flex items-center gap-2.5 mb-2">
+                            <span class="px-3 py-1 rounded-lg font-extrabold text-xs tracking-wider ${data.badgeColor}">${data.code}</span>
+                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Kompetensi Keahlian</span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-navy-900">${data.name}</h3>
+                        <p class="text-slate-600 text-sm sm:text-base mt-1">${data.tagline}</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
+                    ${statsHtml}
+                </div>
+
+                <div class="mt-6">
+                    <h4 class="font-bold text-lg text-navy-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-medal text-yellow-500"></i> Pencapaian & Keunggulan Lulusan
+                    </h4>
+                    <ul class="space-y-3">
+                        ${achievementsHtml}
+                    </ul>
+                </div>
+
+                <div class="mt-8 bg-navy-900/5 border border-navy-900/10 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-navy-900 text-yellow-400 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <p class="text-sm font-semibold text-navy-900">${data.project}</p>
+                    </div>
+                    <a href="https://wa.me/6281319682548?text=Halo%20CS%20PPDB%20SMKN%209%20Kab.%20Tangerang,%20saya%20tertarik%20dengan%20jurusan%20${encodeURIComponent(data.name)}." target="_blank" rel="noopener noreferrer" class="text-xs font-bold bg-navy-900 hover:bg-navy-800 text-white px-4 py-2.5 rounded-xl transition whitespace-nowrap">
+                        Tanya Jurusan Ini <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            `;
+        }
+
+        // Inisialisasi tampilan awal dengan jurusan TKJ
+        window.addEventListener('DOMContentLoaded', () => {
+            selectMajor('tkj', null);
+        });
+    </script>
+</body>
+</html>

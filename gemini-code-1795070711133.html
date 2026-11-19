@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB SMK Negeri 9 Kabupaten Tangerang</title>
+    <!-- Tailwind CSS untuk Desain Modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e3a8a">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header / Navbar dengan Logo Sekolah -->
+    <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Logo Resmi SMKN 9 Kab. Tangerang (SVG) -->
+                <div class="w-11 h-11 flex-shrink-0 drop-shadow">
+                    <svg viewBox="0 0 220 220" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <path id="navArc" d="M 38,98 A 74,74 0 0,1 182,98" />
+                        </defs>
+                        <!-- Bingkai Kelopak / Awan -->
+                        <path d="M110,10 C128,10 142,20 148,34 C166,30 184,42 186,62 C202,72 206,94 196,110 C206,126 202,148 186,158 C184,178 166,190 148,186 C142,200 128,210 110,210 C92,210 78,200 72,186 C54,190 36,178 34,158 C18,148 14,126 24,110 C14,94 18,72 34,62 C36,42 54,30 72,34 C78,20 92,10 110,10 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="5"/>
+                        <path d="M110,18 C126,18 138,27 144,39 C160,36 176,47 178,64 C192,73 196,93 187,110 C196,127 192,147 178,156 C176,173 160,184 144,181 C138,193 126,202 110,202 C94,202 82,193 76,181 C60,184 44,173 42,156 C28,147 24,127 33,110 C24,93 28,73 42,64 C44,47 60,36 76,39 C82,27 94,18 110,18 Z" fill="none" stroke="#162B4D" stroke-width="2.5"/>
+                        <!-- Teks Melengkung -->
+                        <text font-size="11.5" font-weight="800" fill="#162B4D" font-family="sans-serif" letter-spacing="0.4">
+                            <textPath href="#navArc" startOffset="50%" text-anchor="middle">SMK NEGERI 9 KAB.TANGERANG</textPath>
+                        </text>
+                        <!-- Roda Gigi Bawah -->
+                        <path d="M56,144 A60,60 0 0,0 164,144 L154,138 A48,48 0 0,1 66,138 Z" fill="#D58EB3"/>
+                        <g fill="#D58EB3">
+                            <rect x="106" y="166" width="8" height="10" rx="1"/>
+                            <rect x="85" y="162" width="8" height="10" rx="1" transform="rotate(20 89 167)"/>
+                            <rect x="127" y="162" width="8" height="10" rx="1" transform="rotate(-20 131 167)"/>
+                            <rect x="67" y="151" width="8" height="10" rx="1" transform="rotate(40 71 156)"/>
+                            <rect x="145" y="151" width="8" height="10" rx="1" transform="rotate(-40 149 156)"/>
+                        </g>
+                        <!-- Simbol Kesehatan (Cawan & Ular) -->
+                        <path d="M88,66 L132,66 C130,78 120,83 114,84 L114,122 L106,122 L106,84 C100,83 90,78 88,66 Z" fill="#162B4D"/>
+                        <path d="M110,55 C97,55 95,64 108,65 C121,66 121,73 108,73" fill="none" stroke="#162B4D" stroke-width="3.5" stroke-linecap="round"/>
+                        <circle cx="113" cy="55" r="2.2" fill="#162B4D"/>
+                        <!-- Pena -->
+                        <polygon points="105,122 115,122 118,132 110,143 102,132" fill="#162B4D"/>
+                        <circle cx="110" cy="133" r="2" fill="#81C4EE"/>
+                        <!-- Komputer Kiri & Kanan -->
+                        <line x1="78" y1="103" x2="142" y2="103" stroke="#162B4D" stroke-width="2.5"/>
+                        <rect x="52" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                        <rect x="55" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                        <polygon points="50,114 80,114 83,118 47,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                        <rect x="142" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                        <rect x="145" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                        <polygon points="140,114 170,114 173,118 137,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                        <!-- Buku Terbuka -->
+                        <path d="M74,136 Q92,132 110,139 Q128,132 146,136 L149,153 Q128,148 110,155 Q92,148 71,153 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="2.2" stroke-linejoin="round"/>
+                        <line x1="110" y1="139" x2="110" y2="155" stroke="#162B4D" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight tracking-wide">SMK NEGERI 9</h1>
+                    <p class="text-xs text-sky-300 font-semibold tracking-wider uppercase">Kabupaten Tangerang</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+                <a href="#beranda" class="hover:text-blue-300 transition">Beranda</a>
+                <a href="#jurusan" class="hover:text-blue-300 transition">Kompetensi Keahlian</a>
+                <a href="#alur" class="hover:text-blue-300 transition">Alur Pendaftaran</a>
+                <a href="#kontak" class="hover:text-blue-300 transition">Customer Service</a>
+                <a href="#daftar" class="bg-yellow-500 hover:bg-yellow-600 text-blue-950 font-bold px-4 py-2 rounded-lg transition">Daftar Sekarang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section dengan Tampilan Logo Besar -->
+    <section id="beranda" class="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16 text-center px-4">
+        <div class="container mx-auto max-w-3xl flex flex-col items-center">
+            <!-- Logo Utama di Hero Section -->
+            <div class="mb-6 bg-white/10 p-4 rounded-full backdrop-blur-sm border border-blue-400/30 shadow-2xl">
+                <svg viewBox="0 0 220 220" class="w-32 h-32 drop-shadow-lg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <path id="heroArc" d="M 38,98 A 74,74 0 0,1 182,98" />
+                    </defs>
+                    <!-- Bingkai Kelopak / Awan -->
+                    <path d="M110,10 C128,10 142,20 148,34 C166,30 184,42 186,62 C202,72 206,94 196,110 C206,126 202,148 186,158 C184,178 166,190 148,186 C142,200 128,210 110,210 C92,210 78,200 72,186 C54,190 36,178 34,158 C18,148 14,126 24,110 C14,94 18,72 34,62 C36,42 54,30 72,34 C78,20 92,10 110,10 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="5"/>
+                    <path d="M110,18 C126,18 138,27 144,39 C160,36 176,47 178,64 C192,73 196,93 187,110 C196,127 192,147 178,156 C176,173 160,184 144,181 C138,193 126,202 110,202 C94,202 82,193 76,181 C60,184 44,173 42,156 C28,147 24,127 33,110 C24,93 28,73 42,64 C44,47 60,36 76,39 C82,27 94,18 110,18 Z" fill="none" stroke="#162B4D" stroke-width="2.5"/>
+                    <!-- Teks Melengkung -->
+                    <text font-size="11.5" font-weight="800" fill="#162B4D" font-family="sans-serif" letter-spacing="0.4">
+                        <textPath href="#heroArc" startOffset="50%" text-anchor="middle">SMK NEGERI 9 KAB.TANGERANG</textPath>
+                    </text>
+                    <!-- Roda Gigi Bawah -->
+                    <path d="M56,144 A60,60 0 0,0 164,144 L154,138 A48,48 0 0,1 66,138 Z" fill="#D58EB3"/>
+                    <g fill="#D58EB3">
+                        <rect x="106" y="166" width="8" height="10" rx="1"/>
+                        <rect x="85" y="162" width="8" height="10" rx="1" transform="rotate(20 89 167)"/>
+                        <rect x="127" y="162" width="8" height="10" rx="1" transform="rotate(-20 131 167)"/>
+                        <rect x="67" y="151" width="8" height="10" rx="1" transform="rotate(40 71 156)"/>
+                        <rect x="145" y="151" width="8" height="10" rx="1" transform="rotate(-40 149 156)"/>
+                    </g>
+                    <!-- Simbol Kesehatan (Cawan & Ular) -->
+                    <path d="M88,66 L132,66 C130,78 120,83 114,84 L114,122 L106,122 L106,84 C100,83 90,78 88,66 Z" fill="#162B4D"/>
+                    <path d="M110,55 C97,55 95,64 108,65 C121,66 121,73 108,73" fill="none" stroke="#162B4D" stroke-width="3.5" stroke-linecap="round"/>
+                    <circle cx="113" cy="55" r="2.2" fill="#162B4D"/>
+                    <!-- Pena -->
+                    <polygon points="105,122 115,122 118,132 110,143 102,132" fill="#162B4D"/>
+                    <circle cx="110" cy="133" r="2" fill="#81C4EE"/>
+                    <!-- Komputer Kiri & Kanan -->
+                    <line x1="78" y1="103" x2="142" y2="103" stroke="#162B4D" stroke-width="2.5"/>
+                    <rect x="52" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                    <rect x="55" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                    <polygon points="50,114 80,114 83,118 47,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                    <rect x="142" y="92" width="26" height="20" rx="2" fill="#81C4EE" stroke="#162B4D" stroke-width="2"/>
+                    <rect x="145" y="95" width="20" height="14" fill="none" stroke="#162B4D" stroke-width="1.2"/>
+                    <polygon points="140,114 170,114 173,118 137,118" fill="#81C4EE" stroke="#162B4D" stroke-width="1.8"/>
+                    <!-- Buku Terbuka -->
+                    <path d="M74,136 Q92,132 110,139 Q128,132 146,136 L149,153 Q128,148 110,155 Q92,148 71,153 Z" fill="#81C4EE" stroke="#162B4D" stroke-width="2.2" stroke-linejoin="round"/>
+                    <line x1="110" y1="139" x2="110" y2="155" stroke="#162B4D" stroke-width="2"/>
+                </svg>
+            </div>
+            <span class="bg-blue-800 text-blue-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-blue-600">Penerimaan Peserta Didik Baru (PPDB)</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">Wujudkan Masa Depan Gemilang Bersama SMKN 9 Kab. Tangerang</h2>
+            <p class="text-blue-100 text-base md:text-lg mb-8">Sekolah Pusat Keunggulan dengan fasilitas modern, siap mencetak lulusan kompeten, siap kerja, mandiri, dan berkarakter.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
+                <a href="#daftar" class="bg-yellow-500 hover:bg-yellow-600 text-blue-950 font-bold px-6 py-3 rounded-xl shadow-lg transition">Formulir Pendaftaran</a>
+                <a href="#jurusan" class="bg-transparent hover:bg-white/10 border border-white text-white font-semibold px-6 py-3 rounded-xl transition">Lihat Jurusan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jurusan / Kompetensi Keahlian (6 Jurusan) -->
+    <section id="jurusan" class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl md:text-3xl font-bold text-blue-900">Kompetensi Keahlian (Jurusan)</h3>
+            <p class="text-gray-600 mt-2">Pilih dari 6 program keahlian unggulan sesuai minat dan bakatmu</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. TKJ -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition">
+                <div class="w-14 h-12 bg-blue-100 text-blue-700 flex items-center justify-center rounded-xl font-bold text-base mb-4">TKJ</div>
+                <h4 class="font-bold text-lg mb-2 text-blue-900">Teknik Komputer & Jaringan</h4>
+                <p class="text-gray-600 text-sm">Mempelajari perakitan komputer, instalasi jaringan server, Mikrotik, fiber optic, dan administrasi sistem jaringan.</p>
+            </div>
+            <!-- 2. TSM -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition">
+                <div class="w-14 h-12 bg-red-100 text-red-700 flex items-center justify-center rounded-xl font-bold text-base mb-4">TSM</div>
+                <h4 class="font-bold text-lg mb-2 text-blue-900">Teknik Sepeda Motor</h4>
+                <p class="text-gray-600 text-sm">Mempelajari perawatan mesin sepeda motor, sistem injeksi, kelistrikan kendaraan, dan manajemen bengkel otomotif.</p>
+            </div>
+            <!-- 3. Farmasi -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition">
+                <div class="w-20 h-12 bg-emerald-100 text-emerald-700 flex items-center justify-center rounded-xl font-bold text-sm mb-4">FARMASI</div>
+                <h4 class="font-bold text-lg mb-2 text-blue-900">Farmasi Klinis & Komunitas</h4>
+                <p class="text-gray-600 text-sm">Mempelajari peracikan obat, farmakologi, pelayanan kefarmasian apotek dan rumah sakit, serta pengelolaan obat-obatan.</p>
+            </div>
+            <!-- 4. AKC -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition">
+                <div class="w-14 h-12 bg-amber-100 text-amber-700 flex items-center justify-center rounded-xl font-bold text-base mb-4">AKC</div>
+                <h4 class="font-bold text-lg mb-2 text-blue-900">Akuntansi & Keuangan</h4>
+                <p class="text-gray-600 text-sm">Mempelajari siklus akuntansi perusahaan jasa/dagang, perbankan dasar, perpajakan, dan komputerisasi akuntansi.</p>
+            </div>
+            <!-- 5. MPLB -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition">
+                <div class="w-16 h-12 bg-indigo-100 text-indigo-700 flex items-center justify-center rounded-xl font-bold text-base mb-4">MPLB</div>
+                <h4 class="font-bold text-lg mb-2 text-blue-900">Manajemen Perkantoran & Layanan Bisnis</h4>
+                <p class="text-gray-600 text-sm">Mempelajari administrasi perkantoran modern, kearsipan digital, korespondensi, kehumasan, dan layanan bisnis profesional.</p>
+            </div>
+            <!-- 6. DKV -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition">
+                <div class="w-14 h-12 bg-purple-100 text-purple-700 flex items-center justify-center rounded-xl font-bold text-base mb-4">DKV</div>
+                <h4 class="font-bold text-lg mb-2 text-blue-900">Desain Komunikasi Visual</h4>
+                <p class="text-gray-600 text-sm">Mempelajari desain grafis, ilustrasi digital, fotografi, videografi, animasi, serta pembuatan konten kreatif media digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Pendaftaran -->
+    <section id="alur" class="bg-blue-50 py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-blue-900">Alur Pendaftaran Online</h3>
+                <p class="text-gray-600 mt-2">Langkah mudah mendaftar menjadi bagian dari keluarga besar SMKN 9 Kab. Tangerang</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="w-10 h-10 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-3">1</div>
+                    <h5 class="font-bold mb-1">Isi Formulir</h5>
+                    <p class="text-xs text-gray-500">Lengkapi data diri dan asal sekolah dengan benar.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="w-10 h-10 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-3">2</div>
+                    <h5 class="font-bold mb-1">Pilih Jurusan</h5>
+                    <p class="text-xs text-gray-500">Tentukan kompetensi keahlian pilihan.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="w-10 h-10 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-3">3</div>
+                    <h5 class="font-bold mb-1">Simpan Bukti</h5>
+                    <p class="text-xs text-gray-500">Unduh atau cetak bukti pendaftaran online Anda.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="w-10 h-10 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto mb-3">4</div>
+                    <h5 class="font-bold mb-1">Verifikasi</h5>
+                    <p class="text-xs text-gray-500">Datang ke sekolah membawa berkas verifikasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pendaftaran -->
+    <section id="daftar" class="py-16 px-6 max-w-3xl mx-auto">
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-blue-900">Formulir Pendaftaran Siswa Baru</h3>
+                <p class="text-gray-500 text-sm mt-1">Silakan isi data calon peserta didik dengan teliti.</p>
+            </div>
+            
+            <form id="formPendaftaran" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap (Sesuai Ijazah SMP)</label>
+                    <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Contoh: Budi Santoso">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">NISN</label>
+                        <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Nomor Induk Siswa Nasional">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Asal Sekolah (SMP/MTs)</label>
+                        <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Contoh: SMPN 2 Solear">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Pilihan Kompetensi Keahlian</label>
+                        <select required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                            <option value="">-- Pilih Jurusan --</option>
+                            <option value="TKJ">Teknik Komputer dan Jaringan (TKJ)</option>
+                            <option value="TSM">Teknik Sepeda Motor (TSM)</option>
+                            <option value="Farmasi">Farmasi Klinis & Komunitas</option>
+                            <option value="AKC">Akuntansi dan Keuangan (AKC)</option>
+                            <option value="MPLB">Manajemen Perkantoran dan Layanan Bisnis (MPLB)</option>
+                            <option value="DKV">Desain Komunikasi Visual (DKV)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nomor WhatsApp Aktif</label>
+                        <input type="tel" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="Contoh: 081234567890">
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl shadow-lg transition">
+                        Kirim Pendaftaran
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Layanan Customer Service / Bantuan PPDB -->
+        <div id="kontak" class="mt-8 bg-green-50 border border-green-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+            <div class="text-center sm:text-left">
+                <span class="text-xs font-bold uppercase tracking-wider text-green-700 bg-green-100 px-2.5 py-1 rounded-full">Layanan Bantuan PPDB</span>
+                <h4 class="font-bold text-lg text-gray-900 mt-2">Butuh Bantuan atau Informasi Pendaftaran?</h4>
+                <p class="text-sm text-gray-600 mt-0.5">Hubungi Customer Service resmi kami melalui WhatsApp atau Telepon:</p>
+                <p class="text-base font-extrabold text-green-700 mt-1">📞 0813-1968-2548</p>
+            </div>
+            <a href="https://wa.me/6281319682548?text=Halo%20Customer%20Service%20PPDB%20SMK%20Negeri%209%20Kabupaten%20Tangerang,%20saya%20ingin%20bertanya%20mengenai%20pendaftaran." target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-xl shadow-md transition flex items-center gap-2 whitespace-nowrap">
+                <span>Chat WhatsApp CS</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Tombol Mengambang (Floating WhatsApp CS) -->
+    <a href="https://wa.me/6281319682548?text=Halo%20Customer%20Service%20PPDB%20SMKN%209%20Kab.%20Tangerang,%20saya%20butuh%20bantuan%20pendaftaran." target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-50 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-full shadow-2xl flex items-center gap-2.5 transition transform hover:scale-105">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+        </svg>
+        <div class="text-left leading-tight">
+            <span class="block text-[10px] uppercase tracking-wider text-green-100 font-semibold">Customer Service</span>
+            <span class="block text-sm font-bold">0813-1968-2548</span>
+        </div>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-blue-200 py-8 text-center text-sm px-4">
+        <p class="font-semibold text-white mb-1">Customer Service PPDB: <a href="https://wa.me/6281319682548" target="_blank" class="text-green-400 hover:underline">0813-1968-25
